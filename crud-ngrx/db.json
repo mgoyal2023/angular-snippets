@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "username": "Gorv Choudhary",
+      "gender": "male",
+      "company": "Dits",
+      "age": "21",
+      "id": 1
+    },
+    {
+      "username": "Gorv Choudhary",
+      "gender": "male",
+      "company": "Dits",
+      "age": "24",
+      "id": 2
+    }
+  ]
+}

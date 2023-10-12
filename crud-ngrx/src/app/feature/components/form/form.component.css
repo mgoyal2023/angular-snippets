@@ -1,0 +1,13 @@
+.formDesign{
+    width: 35%;
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid gray;
+    border-radius: 5px;
+   
+}
+
+.card-header{
+    text-align: center;
+    font-size: larger;
+}

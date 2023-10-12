@@ -1,0 +1,43 @@
+<div class='card'>
+    <div class='card-header'>
+        {{pageTitle}}
+    </div>
+    <div>
+        <button class="btn btn-outline-dark m-3" type="button" (click)="back()">
+            Back
+        </button>
+    </div>
+    <div class='card-body'>
+
+        <div class='table-responsive'>
+            <table class='table' *ngIf='users && users.length'>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Company</th>
+                        <th>Age</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let user of users'>
+                        <td>{{ user.username }}</td>
+                        <td>{{ user.gender }}</td>
+                        <td>{{ user.company | lowercase}}</td>
+                        <td>{{ user.age }}</td>
+                        <td>
+                            <button class="btn btn-outline-success" style="margin-right: 8px;" type="button"
+                                (click)="editUser(user.id)">Edit</button>
+
+                            <button class="btn btn-outline-danger" type="button"
+                                (click)="deleteUser(user.id)">Delete</button>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="text-align: center;" *ngIf="!users.length">No Records Found, Please go back and register first</div>
+    </div>
+</div>
