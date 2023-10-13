@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Installation
 
-npm install @ngrx/{store,effects,entity,store-devtools} --save 
+npm install @ngrx/{store,effects,entity,store-devtools} --save
 ng add @ngrx/store-devtools@latest
 Add Redux devTools Chrome Extension
 
