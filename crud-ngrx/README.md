@@ -4,11 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Installation
 
-npm install @ngrx/{store,effects,entity,store-devtools} --save
-
-ng add @ngrx/store-devtools@latest
-
-Add Redux devTools Chrome Extension
+1. npm install @ngrx/{store,effects,entity,store-devtools} --save
+2. ng add @ngrx/store-devtools@latest
+3. Add Redux devTools Chrome Extension
 
 ## Folder Structure
 
