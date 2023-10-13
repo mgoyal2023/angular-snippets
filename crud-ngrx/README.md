@@ -10,10 +10,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Folder Structure
 
-Create Store Folder
-In this folder create Actions/Reducers/Effects/Selectors folders
-
-In this folders Add files exp. User.action/effect/reducer/selector.ts
+* Create Store Folder
+1. In this folder create Actions/Reducers/Effects/Selectors folders
+2. In this folders Add files exp. User.action/effect/reducer/selector.ts
 
 ## Imports
 
