@@ -1,27 +1,34 @@
-# CrudNgrx
+# Ngrx Crud-operations
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0-next.2.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+npm install @ngrx/{store,effects,entity,store-devtools} --save 
+ng add @ngrx/store-devtools@latest
+Add Redux devTools Chrome Extension
 
-## Code scaffolding
+## Folder Structure
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Create Store Folder
+In this folder create Actions/Reducers/Effects/Selectors folders
+In this folders Add files exp. User.action/effect/reducer/selector.ts
 
-## Build
+## Imports
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+//app.module.ts
+First of all import StoreModule
+After that import EffectsModule
+Import reducer file
+Import effect file
 
-## Running unit tests
+//For Store view in devtools
+Import StoreDevtoolsModule
+Import isDevMode
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+exp.
+imports:[
+    StoreModule.forRoot({ StoreName(Users): ReducerFile }),
+    EffectsModule.forRoot([EffectFile]),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
+]
